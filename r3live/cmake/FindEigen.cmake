@@ -96,7 +96,7 @@ list(APPEND EIGEN_CHECK_INCLUDE_DIRS
   /usr/local/homebrew/include # Mac OS X
   /opt/local/var/macports/software # Mac OS X.
   /opt/local/include
-  /usr/include)
+  /usr/include/eigen3)
 # Additional suffixes to try appending to each search path.
 list(APPEND EIGEN_CHECK_PATH_SUFFIXES
   eigen3 # Default root directory for Eigen.

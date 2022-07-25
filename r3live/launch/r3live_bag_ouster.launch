@@ -1,8 +1,8 @@
 <launch>
     <!-- Subscribed topics -->
-    <param name="/LiDAR_pointcloud_topic" type="string" value= "/laser_cloud_flat" />
-    <param name="/IMU_topic" type="string" value= "/os_cloud_node/imu" />
-    <param name="/Image_topic" type="string" value= "/NotAvail" />
+    <param name="/LiDAR_pointcloud_topic" type="string" value= "/os1_cloud_node1/points" />
+    <param name="/IMU_topic" type="string" value= "/os1_cloud_node1/imu" />
+    <param name="/Image_topic" type="string" value= "/left/image_raw" />
     <param name="map_output_dir" type="string" value="$(env HOME)/r3live_output" />
     <rosparam command="load" file="$(find r3live)/../config/r3live_config.yaml" />
     

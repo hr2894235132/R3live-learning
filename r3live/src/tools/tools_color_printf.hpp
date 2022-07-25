@@ -74,8 +74,8 @@ using std::endl;
     #define ANSI_COLOR_YELLOW_BOLD ""
     #define ANSI_COLOR_BLUE ""
     #define ANSI_COLOR_BLUE_BOLD ""
-    #define ANSI_COLOR_MAGENTA ""
-    #define ANSI_COLOR_MAGENTA_BOLD ""
+    #define ANSI_COLOR_MAGENTA ""     //洋红色
+    #define ANSI_COLOR_MAGENTA_BOLD ""  //bold：粗体
 #else
     #define ANSI_COLOR_RED "\x1b[0;31m"
     #define ANSI_COLOR_RED_BOLD "\x1b[1;31m"
@@ -98,7 +98,7 @@ using std::endl;
     #define ANSI_COLOR_MAGENTA_BG "\x1b[0;45m"
 
     #define ANSI_COLOR_CYAN "\x1b[0;36m"
-    #define ANSI_COLOR_CYAN_BOLD "\x1b[1;36m"
+    #define ANSI_COLOR_CYAN_BOLD "\x1b[1;36m" //青色
     #define ANSI_COLOR_CYAN_BG "\x1b[0;46m"
 
     #define ANSI_COLOR_WHITE "\x1b[0;37m"
@@ -113,7 +113,7 @@ using std::endl;
 
     #define ANSI_DELETE_LAST_LINE "\033[A\33[2K\r"
     #define ANSI_DELETE_CURRENT_LINE "\33[2K\r"
-    #define ANSI_SCREEN_FLUSH std::fflush(stdout);
+    #define ANSI_SCREEN_FLUSH std::fflush(stdout); // 清空输出缓冲区
 
     #define SET_PRINT_COLOR( a ) cout << a ;
 

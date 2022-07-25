@@ -89,13 +89,13 @@ MeasureGroup Measures;
 StatesGroup g_lio_state;
 std::string data_dump_dir = std::string("/mnt/0B3B134F0B3B134F/color_temp_r3live/");
 
-int main(int argc, char **argv)
-{
-    printf_program("R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package");
+int main(int argc, char **argv) {
+    printf_program(
+            "R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package");
     Common_tools::printf_software_version();
     Eigen::initParallel();
     ros::init(argc, argv, "R3LIVE_main");
-    R3LIVE * fast_lio_instance = new R3LIVE();
+    R3LIVE *fast_lio_instance = new R3LIVE();
     ros::Rate rate(5000);
     bool status = ros::ok();
     ros::spin();

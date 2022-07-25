@@ -66,7 +66,7 @@ class ImuProcess
   Eigen::Vector3d cov_gyr;
 
   // std::ofstream fout;
-
+  
  public:
   /*** Whether is the first frame, init for first frame ***/
   bool b_first_frame_ = true;

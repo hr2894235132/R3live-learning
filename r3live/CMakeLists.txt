@@ -30,7 +30,10 @@ find_package(catkin REQUIRED COMPONENTS
 
 # find_package(Ceres REQUIRED)
 find_package(PCL REQUIRED)
+
+#set(OpenCV_DIR /home/hr/opencv-3.4.3/my_build_dir)
 find_package(OpenCV REQUIRED)
+#include_directories(${OpenCV_INCLUDE_DIRS})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}   ${OpenMP_C_FLAGS}")
@@ -67,6 +70,7 @@ generate_messages(
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Eigen3)
 include_directories(
+  /usr/include/eigen3
   ${catkin_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
